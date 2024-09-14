@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+
+#header {
+    background-color: rgb(238, 232, 232);
+    border-radius: 10px;
+}
+
+#header ul {
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+    font-weight: 600;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+#header ul li {
+    list-style: none;
+    cursor: pointer;
+    flex: 1; /* Make list items flexible */
+    text-align: center; /* Center text */
+}
+
+#header ul li:hover {
+    color: rgb(238, 12, 50);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+
+.search {
+    display: flex;
+    flex-direction: column; /* Stack search input and button vertically */
+    gap: 10px;
+}
+
+.search input {
+    width: 100%; /* Full width for input */
+    padding: 1%;
+    border-radius: 10px;
+    border: none;
+}
+
+.search button {
+    width: 100%; /* Full width for button */
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(238, 12, 50);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px; /* Adjust font size for buttons */
+}
+
+.table td button:first-child {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table td button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #header ul {
+        flex-direction: column;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search input, .search button {
+        width: 100%;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .table td button {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header ul {
+        font-size: 12px;
+    }
+
+    .search input, .search button {
+        padding: 8px;
+    }
+
+    .table th, .table td {
+        font-size: 10px;
+    }
+
+    .table td button {
+        padding: 3px 6px;
+        font-size: 8px;
+    }
+}

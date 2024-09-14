@@ -1,0 +1,68 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+#nav{
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    position: fixed;
+    background-color: white;
+}
+
+#logoWrapper{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+#logo{
+    width: 120%;
+}
+
+#logo img{
+    width: 100%;
+    cursor: pointer;
+}
+
+#butn{
+    background-color: rgba(255, 192, 203, 0.489);
+    padding: 2%;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+#navIcon{
+    font-size: calc(1.5vw + 1vh);
+    color: rgb(233, 14, 51);
+}
+
+#container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+}
+
+#showDate{
+    padding: 1%;
+}
+
+#showDate:hover{
+    
+    border: 1px solid rgb(247, 13, 52);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#showBranch strong{
+    color: rgb(246, 13, 52);
+}

@@ -1,0 +1,85 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 10px; /* Add padding for small screens */
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* Increased max-width for larger screens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.modalContent h3 {
+    margin-bottom: 15px; /* Adjusted for better spacing */
+    font-size: 1.5rem; /* Improved font size */
+    font-weight: 600; /* Made title bolder */
+}
+
+.modalContent form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+.modalContent form input,
+.modalContent form textarea {
+    padding: 12px; /* Increased padding for better touch targets */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem; /* Improved font size */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.modalContent form button {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #007bff; /* Primary button color */
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.modalContent form button:hover {
+    background-color: #0056b3; /* Darker color for hover effect */
+}
+
+.modalContent button:last-child {
+    background-color: #dc3545; /* Secondary button color */
+    margin-top: 15px;
+}
+
+.modalContent button:last-child:hover {
+    background-color: #c82333; /* Darker color for hover effect */
+}
+
+.modalContent .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #6c757d;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.modalContent .closeButton:hover {
+    background-color: #5a6268;
+}

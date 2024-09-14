@@ -1,0 +1,70 @@
+.pageContainer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.categorySelector {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categorySelector select {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.itemsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.itemCard {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+.itemImage {
+    width: 100%;
+    height: auto;
+}
+
+.itemName {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.itemDescription {
+    font-size: 1em;
+    color: #666;
+}
+
+.itemPrice {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}

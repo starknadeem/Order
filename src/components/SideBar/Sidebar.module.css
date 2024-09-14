@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 20%;
+    padding: 1%;
+    position: fixed;
+}
+
+#main ul li{
+    width: 100%;
+    padding: 5%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    justify-content: space-between;
+}
+
+#main ul .subMenu {
+    padding-left: 20px; /* Indent the submenu */
+    display: flex;
+    flex-direction: column;
+}
+
+#main ul .subMenu li {
+    padding: 5%;
+    list-style: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#main ul li select {
+    padding: 2%;
+    border-radius: 10px;
+}
